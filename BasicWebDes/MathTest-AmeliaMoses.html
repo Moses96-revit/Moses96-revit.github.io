@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Test</title>
+    <!-- Basic styling for readability. Not required for the assignment but helpful. -->
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 600px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            box-sizing: border-box; 
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Online Math Test</h2>
+
+    <!-- START OF MATH TEST FORM -->
+    <form action="/submit_test" method="POST">
+
+       
+        <div class="question">
+            <label for="user_name">Enter Your Name:</label>
+            <input type="text" id="user_name" name="user_name" required>
+        </div>
+
+       
+        <div class="question">
+            <p>1. What is the value of 25 &divide; 5?</p>
+            <input type="radio" id="q1a" name="q1" value="4">
+            <label for="question1">4</label><br>
+            <input type="radio" id="q1b" name="q1" value="6">
+            <label for="question1">6</label><br>
+            <input type="radio" id="q1c" name="q1" value="5">
+            <label for="question1">5</label>
+        </div>
+
+       
+        <div class="question">
+            <p>2. 6 &times; 8 = ?</p>
+            <input type="radio" id="q2a" name="q2" value="addition">
+            <label for="question2">28</label><br>
+            <input type="radio" id="q2b" name="q2" value="subtraction">
+            <label for="question2">48</label><br>
+            <input type="radio" id="q2c" name="q2" value="multiplication">
+            <label for="question2">34</label>
+        </div>
+
+       
+        <div class="question">
+            <p>3. Is the following statement true or false: 26 &le; 5 </p>
+            <input type="radio" id="question3" name="question3" value="true">
+            <label for="question3">True</label><br>
+            <input type="radio" id="question3" name="question3" value="false">
+            <label for="question3">False</label>
+        </div>
+
+       
+        <div class="question">
+            <p>4. Molly decides to go to the store to buy watermelon. She has 20 dollars and a single watermelon costs $3.75. How many watermelons can Molly buy?</p>
+            <label for="word_problem_answer">Type your answer and explanation here:</label>
+            <textarea id="word_problem_answer" name="word_problem_answer" rows="4"></textarea>
+        </div>
+
+       
+        <input type="submit" value="Submit Test">
+        <!-- END OF MATH TEST FORM -->
+    </form>
+
+
+</body>
+</html>
