@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Scheme Assignment</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Style the Table */
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin-top: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 15px;
+        text-align: left;
+    }
+
+    /* Header styling - Different font style applied */
+    th {
+        background-color: #333;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    /* Background colors applied directly to the color name cells */
+    .color-name {
+        font-weight: bold;
+        color: white; /* Default text color for contrast */
+        text-shadow: 1px 1px 2px black; /* Improves readability on dark backgrounds */
+    }
+
+    /* Specific Background Colors */
+    .dark-purple { background-color: #301934; }
+    .deep-purple { background-color: #36013F; }
+    .black-color { background-color: #000000; }
+    .tan-color { background-color: #D2B48C; color: black; text-shadow: none; }
+</style>
+</head>
+<body>
+
+    <h1>Color Scheme</h1>
+    
+    <style>
+  img {
+    display: block
+    margin-left: auto
+    margin-right: auto
+  }
+</style>
+<div class="image-container">
+  <img src="https://eddiesguitars.com/wp-content/uploads/2024/10/EVH-1-6.jpg" alt="Purple Electrtic Guitar" width="%50" height="auto">
+  
+</div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">Purple Electric Guitar Color Scheme</th>
+            </tr>
+            <tr>
+                <th>Color Name</th>
+                <th>HEX</th>
+                <th>RGB</th>
+                <th>HSL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row 1: Dark Purple -->
+            <tr>
+                <td class="color-name dark-purple">Dark Purple</td>
+                <td>#301934</td>
+                <td>rgb(48, 25, 52)</td>
+                <td>hsl(291, 35%, 15%)</td>
+            </tr>
+            <!-- Row 2: Deep Purple -->
+            <tr>
+                <td class="color-name deep-purple">Deep Purple</td>
+                <td>#36013F</td>
+                <td>rgb(54, 1, 63)</td>
+                <td>hsl(290, 97%, 13%)</td>
+            </tr>
+            <!-- Row 3: Black -->
+            <tr>
+                <td class="color-name black-color">Black</td>
+                <td>#000000</td>
+                <td>rgb(0, 0, 0)</td>
+                <td>hsl(0, 0%, 0%)</td>
+            </tr>
+            <!-- Row 4: Tan -->
+            <tr>
+                <td class="color-name tan-color">Tan</td>
+                <td>#D2B48C</td>
+                <td>rgb(210, 180, 140)</td>
+                <td>hsl(34, 44%, 69%)</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
