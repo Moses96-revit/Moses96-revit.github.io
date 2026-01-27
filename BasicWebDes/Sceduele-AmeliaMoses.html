@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* Table Style*/
+    #schedule-table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border: 2px solid #2c3e50;
+    }
+
+    
+    th {
+        background-color: #2c3e50;
+        color: white;
+        padding: 15px;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+   
+    td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    
+    .time-col {
+        width: 20%;
+        font-weight: bold;
+        color: #2980b9;
+        background-color: #f9f9f9;
+    }
+
+    
+    #lunch-row {
+        background-color: #fff9c4;
+        font-style: italic;
+    }
+
+   
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Daily Sceduele</h2>
+
+<table id="schedule">
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>To-Do List</th>
+            <th>Tools Needed</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="time-col">06:00 AM</td>
+            <td>Coffee & Bible Reading</td>
+            <td>Bible & a cup of coffee</td>
+        </tr>
+        <tr>
+            <td class="time-col">07:00 AM</td>
+            <td>Physical Therapy Exercises</td>
+            <td>Yoga Mat, Bands, & Weights</td>
+        </tr>
+        <tr>
+            <td class="time-col">9:00 AM</td>
+            <td>Online Classes</td>
+            <td>Laptop & Desktop</td>
+        </tr>
+        <tr id="lunch">
+            <td class="time-col">12:00 PM</td>
+            <td>Cook Lunch</td>
+            <td>Kitchen Utensils & Food</td>
+        </tr>
+        <tr>
+            <td class="time-col">01:00 PM</td>
+            <td>Online Classes</td>
+            <td>Laptop & Desktop</td>
+        </tr>
+        <tr>
+            <td class="time-col">03:00 PM</td>
+            <td>Chores</td>
+            <td>Coveralls, Boots, Hat & Coat</td>
+        </tr>
+        <tr>
+            <td class="time-col">04:30 PM</td>
+            <td>Shower</td>
+            <td>Clean Pair of Clothes & Towel</td>
+        </tr>
+        <tr>
+            <td class="time-col">06:00 PM</td>
+            <td>Cook Supper</td>
+            <td>Kitchen Utensils & Food</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
