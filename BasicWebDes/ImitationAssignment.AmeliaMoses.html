@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Image Effects</title>
+  <link rel="stylesheet" href="styles.css">
+    <style>
+      .gallery-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    gap: 10px; 
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.33% - 20px); 
+    box-sizing: border-box;
+    height: 200px; 
+    overflow: hidden; 
+    border: 1px solid #ccc; 
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+
+.Penguins {
+            -webkit-filter: sepia(100%);
+
+        }
+
+.Penguins {
+  width: 400px;  
+  height: 250px; 
+  border-radius: 50%; 
+  border:1px solid black;
+  overflow: hidden; 
+}
+
+.Penguins img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+}
+
+.football-field {
+border: 27px solid transparent;
+border-image: url(C:\Users\s9258\Downloads\BasicWebDes\Image Folder\tic-tac-toe.png) 27 round;
+}
+
+
+.football-field img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.tic img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.seagull {
+  height: 100%;
+  width: 30%;
+  background-image: linear-gradient(to bottom right, blue, white);
+  background-color: purple;
+
+}
+
+.butterfly {
+  border-radius: 100px 0px 100px 0px;
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
+}
+
+.butterfly img {
+  filter: invert(100%) opacity(60%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.dinosaur img {
+  -webkit-filter: drop-shadow(-5px -5px 5px #000000) hue-rotate(90deg);
+  filter: drop-shadow(-5px -5px 5px #000000) hue-rotate(90deg);
+}
+
+.theatre {
+    position: relative; 
+    display: inline-block; 
+}
+
+.theatre img {
+   -webkit-filter: blur(3px);
+  filter: blur(3px);
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.Presenting {
+    position: absolute; 
+    color: white; 
+    top: 40%;
+    left: 20%; 
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px; 
+    text-shadow: 6px 6px 4px #000; 
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+  <h1>CSS3 Image Effects Gallery</h1>
+
+  <div class="gallery">
+
+    <div class="Penguins">
+      <img src="C:\Users\s9258\Downloads\BasicWebDes\Image Folder\penguins.jpg" alt="Penguins">
+    </div>
+
+    <div class="football-field">
+      <img src="C:\Users\s9258\Downloads\BasicWebDes\Image Folder\football_field.jpg" alt="football-field">
+    </div>
+
+     <div class="tic">
+      <img src="C:\Users\s9258\Downloads\BasicWebDes\Image Folder\tic-tac-toe.png" alt="tic">
+      <div class="tic">
+    </div>
+
+    <div class="seagull">
+      <img src="C:\Users\s9258\Downloads\BasicWebDes\Image Folder\seagull.png" alt="seagull">
+    </div>
+
+    <div class="butterfly">
+      <img src="C:\Users\s9258\Downloads\BasicWebDes\Image Folder\butterfly.jpg" alt="butterfly">
+    </div>
+
+    <div class="dinosaur">
+      <img src="C:\Users\s9258\Downloads\BasicWebDes\Image Folder\dinosaur.png" alt="dinosaur">
+    </div>
+
+    <div class="theatre">
+      <img src="C:\Users\s9258\Downloads\BasicWebDes\Image Folder\theater_stage.jpg" alt="theatre">
+      <div class="Presenting">
+        Presenting
+    </div>
+
+
+
+  </div>
+
+</body>
+</html>
