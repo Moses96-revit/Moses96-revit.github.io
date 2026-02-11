@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Review Flashcards</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Title Styling and Animation */
+        .title {
+            color: black;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            animation: fadeIn 5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: blue;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            height: 150px;
+            cursor: pointer;
+            transition: transform 1s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .question {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            box-sizing: border-box;
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            background-color: blue;
+            transition: opacity 0.5s ease;
+        }
+
+        .answer {
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            background-color: rebeccapurple; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            box-sizing: border-box;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .card:hover .question {
+            opacity: 0;
+        }
+
+        .card:hover .answer {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="title">Flashcards Terminology Review</h1>
+
+    <div class="card-container">
+        
+        <div class="card">
+            <div class="question">animation:();</div>
+            <div class="answer">shorthand property for all animation properties</div>
+        </div>
+
+        <div class="card">
+            <div class="question">animation-name:();</div>
+            <div class="answer">specifies the name of the keyframe you want to bind to the selector</div>
+        </div>
+
+        <div class="card">
+            <div class="question">animation-duration:();</div>
+            <div class="answer">specifies how many seconds or milliseconds an animation takes to complete</div>
+        </div>
+
+        <div class="card">
+            <div class="question">animation-timing-function:();</div>
+            <div class="answer">specifies the speed curve of the animation</div>
+        </div>
+
+        <div class="card">
+            <div class="question">animation-delay:();</div>
+            <div class="answer">specifies a delay before the animation will start</div>
+        </div>
+
+        <div class="card">
+            <div class="question">animation-iteration-count:();</div>
+            <div class="answer">specifies how many times an animation should be played</div>
+        </div>
+
+        <div class="card">
+            <div class="question">animation-direction:();</div>
+            <div class="answer">specifies whether or not the animation should play in reverse on alternate cycles</div>
+        </div>
+
+        <div class="card">
+            <div class="question">animation-fill-mode:();</div>
+            <div class="answer">specifies what values are applied by the animation outside the time it is executing</div>
+        </div>
+    </div>
+</body>
+</html>
